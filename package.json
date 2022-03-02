@@ -1,0 +1,47 @@
+{
+  "name": "@tencent/proto-to-ts",
+  "description": "",
+  "version": "0.1.12",
+  "private": false,
+  "author": {
+    "name": "byq1213",
+    "email": "1213567900@qq.com"
+  },
+  "repository": "https://github.com/byq1213/proto-to-ts",
+  "keywords": [
+    "vue",
+    "proto",
+    "ts",
+    "transform",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "./dist/proto2ts.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name 'proto2ts' ./src/install.ts",
+    "lint": "vue-cli-service lint"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "protobufjs": "^6.11.2",
+    "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "typescript": "~4.5.5"
+  }
+}
