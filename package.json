@@ -1,7 +1,7 @@
 {
   "name": "@tencent/proto-to-ts",
   "description": "",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": false,
   "author": {
     "name": "byq1213",
@@ -16,11 +16,12 @@
     "typescript"
   ],
   "license": "MIT",
-  "main": "./dist/proto2ts.common.js",
+  "main": "./dist/proto2ts.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-library": "vue-cli-service build --target lib --name 'proto2ts' ./src/install.ts",
+    "build-vue": "vue-cli-service build --target lib --name 'proto2ts' --inline-vue ./src/components/MyComponent.vue",
     "lint": "vue-cli-service lint"
   },
   "files": [
